@@ -2,28 +2,10 @@
 // To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
 // Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
 
-
-
-// $primary: 140B40;
-// $secondary: EDEDED;
-// $tertiary: 555555;
-// $body-color: 222529;
-// $white: ffffff;
-
-// $font-family : open sans;
-
 /* Variable Overrides */
 
-$primary: #140B40;
-$secondary: #EDEDED;
+$primary: #140b40;
+$secondary: #ededed;
+$body-color: #222529;
 
-$theme-colors: (
-  "primary": $primary,
-  "secondary": $secondary,
-);
-
-$tertiary: (
-  "tertiary": #555555,
-);
-
-$theme-colors: map-merge($theme-colors, $tertiary);
+$font-family-base: "Open Sans", sans-serif;

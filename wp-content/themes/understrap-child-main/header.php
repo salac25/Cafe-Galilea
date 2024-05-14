@@ -21,6 +21,9 @@ $navbar_type       = get_theme_mod('understrap_navbar_type', 'collapse');
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
@@ -31,11 +34,11 @@ $navbar_type       = get_theme_mod('understrap_navbar_type', 'collapse');
 		<!-- ******************* The Navbar Area ******************* -->
 		<header id="wrapper-navbar">
 
+
 			<a class="skip-link <?php echo understrap_get_screen_reader_class(true); ?>" href="#content">
 				<?php esc_html_e('Skip to content', 'understrap'); ?>
 			</a>
-			<?php
-			echo $navbar_type . $bootstrap_version ?>
+
 			<?php get_template_part('global-templates/navbar', $navbar_type . '-' . $bootstrap_version); ?>
 
 		</header><!-- #wrapper-navbar -->
