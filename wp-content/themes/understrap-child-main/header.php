@@ -23,7 +23,8 @@ $navbar_type       = get_theme_mod('understrap_navbar_type', 'collapse');
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
 	<?php wp_head(); ?>
 </head>
 
@@ -33,6 +34,45 @@ $navbar_type       = get_theme_mod('understrap_navbar_type', 'collapse');
 
 		<!-- ******************* The Navbar Area ******************* -->
 		<header id="wrapper-navbar">
+
+			<div class="top-bar">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 ">
+							<ul class="top-bar__contact">
+								<li>
+									<i class="fa fa-phone rounded-circle" aria-hidden="true"></i>
+									<a href="tel: 09123456789">0928 652 8039</a>
+								</li>
+
+								<li>
+									<i class="fa fa-envelope" aria-hidden="true"></i>
+									<a href="mailto:orders.cafegalilea@yahoo.com">orders.cafegalilea@yahoo.com</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-md-8">
+							<ul class="top-bar__contact">
+								<li>
+									<i class="fa fa-truck" aria-hidden="true"></i>
+									Free Shipping
+								</li>
+
+								<li>
+									<i class="fa fa-history" aria-hidden="true"></i>
+									30 Days Moneyback Guarantee
+								</li>
+
+								<li>
+									<i class="fa fa-user-circle" aria-hidden="true"></i>
+									24/7 Customer Support
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 
 
 			<a class="skip-link <?php echo understrap_get_screen_reader_class(true); ?>" href="#content">
