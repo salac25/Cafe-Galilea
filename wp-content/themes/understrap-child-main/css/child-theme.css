@@ -14969,6 +14969,11 @@ figure.woocommerce-product-gallery__wrapper {
 /* ========== */
 /* Custom Styles */
 /* ========== */
+/* Header */
+.shop-menus li i {
+  font-size: 1.5rem;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;
