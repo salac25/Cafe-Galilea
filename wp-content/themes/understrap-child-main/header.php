@@ -35,41 +35,51 @@ $navbar_type       = get_theme_mod('understrap_navbar_type', 'collapse');
 		<!-- ******************* The Navbar Area ******************* -->
 		<header id="wrapper-navbar">
 
-			<div class="top-bar">
+			<div class="top-bar bg-primary py-2">
 				<div class="container">
-					<div class="row">
-						<div class="col-md-4 ">
-							<ul class="top-bar__contact">
+					<div class="row justify-content-between align-items-center gy-2">
+						<div class="col-md-4">
+							<ul class="socials list-unstyled d-flex gap-3 m-0">
 								<li>
-									<i class="fa fa-phone rounded-circle" aria-hidden="true"></i>
-									<a href="tel: 09123456789">0928 652 8039</a>
+									<a href="/">
+										<i class="fa-brands fa-facebook text-white"></i>
+									</a>
 								</li>
 
 								<li>
-									<i class="fa fa-envelope" aria-hidden="true"></i>
-									<a href="mailto:orders.cafegalilea@yahoo.com">orders.cafegalilea@yahoo.com</a>
+									<a href="/">
+										<i class="fa-brands fa-instagram text-white"></i>
+									</a>
 								</li>
+
+								<li>
+									<a href="/">
+										<i class="fa-brands fa-x-twitter text-white"></i>
+									</a>
+								</li>
+
+
 							</ul>
 						</div>
 
 						<div class="col-md-8">
-							<ul class="top-bar__contact">
-								<li>
-									<i class="fa fa-truck" aria-hidden="true"></i>
-									Free Shipping
+							<ul class="list-unstyled d-flex m-0 justify-content-md-end justify-content-start flex-wrap align-items-center">
+								<li class="text-white me-3">
+									<i class="fa-solid fa-location-dot me-1"></i>
+									<small> San Pedro, Bustos, Bulacan 3007</small>
 								</li>
 
-								<li>
-									<i class="fa fa-history" aria-hidden="true"></i>
-									30 Days Moneyback Guarantee
-								</li>
+								<div class="vr text-white me-3"></div>
 
-								<li>
-									<i class="fa fa-user-circle" aria-hidden="true"></i>
-									24/7 Customer Support
+								<li class="text-white">
+									<i class="fa-solid fa-phone me-1"></i>
+									<small>0949 195 9421</small>
 								</li>
 							</ul>
+
+
 						</div>
+
 					</div>
 				</div>
 			</div>

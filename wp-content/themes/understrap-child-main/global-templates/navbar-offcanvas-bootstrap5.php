@@ -13,7 +13,9 @@ defined('ABSPATH') || exit;
 $container = get_theme_mod('understrap_container_type');
 ?>
 
-<nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-secondary" aria-labelledby="main-nav-label">
+
+
+<nav id="main-nav" class="navbar navbar-expand-md navbar-light bg-secondary" aria-labelledby="main-nav-label">
 
 	<h2 id="main-nav-label" class="screen-reader-text">
 		<?php esc_html_e('Main Navigation', 'understrap'); ?>
@@ -26,13 +28,13 @@ $container = get_theme_mod('understrap_container_type');
 		<?php get_template_part('global-templates/navbar-branding'); ?>
 
 		<button class="navbar-toggler text-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavOffcanvas" aria-controls="navbarNavOffcanvas" aria-expanded="false" aria-label="<?php esc_attr_e('Open menu', 'understrap'); ?>">
-			<span class="navbar-toggler-icon bg-primary"></span>
+			<span class="navbar-toggler-icon text-primary"></span>
 		</button>
 
 		<div class="offcanvas offcanvas-end bg-secondary" tabindex="-1" id="navbarNavOffcanvas">
 
 			<div class="offcanvas-header justify-content-end">
-				<button class="btn-close btn-close-white text-reset" type="button" data-bs-dismiss="offcanvas" aria-label="<?php esc_attr_e('Close menu', 'understrap'); ?>"></button>
+				<button class="btn-close btn-close-primary text-reset" type="button" data-bs-dismiss="offcanvas" aria-label="<?php esc_attr_e('Close menu', 'understrap'); ?>"></button>
 			</div><!-- .offcancas-header -->
 
 			<!-- The WordPress Menu goes here -->
@@ -42,7 +44,7 @@ $container = get_theme_mod('understrap_container_type');
 					'theme_location'  => 'primary',
 					'container_class' => 'offcanvas-body',
 					'container_id'    => '',
-					'menu_class'      => 'navbar-nav justify-content-end flex-grow-1 pe-3',
+					'menu_class'      => 'navbar-nav',
 					'fallback_cb'     => '',
 					'menu_id'         => 'main-menu',
 					'depth'           => 2,
@@ -51,6 +53,24 @@ $container = get_theme_mod('understrap_container_type');
 			);
 			?>
 		</div><!-- .offcanvas -->
+
+		<ul class="shop-menus list-unstyled m-0 d-flex align-items-center gap-3 d-none d-md-flex">
+			<li>
+				<button class="bg-transparent border-0 p-0">
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</button>
+			</li>
+			<li>
+				<a href="/">
+					<i class="fa-regular fa-user"></i>
+				</a>
+			</li>
+			<li>
+				<a href="/">
+					<i class="fa-solid fa-cart-shopping"></i>
+				</a>
+			</li>
+		</ul>
 
 	</div><!-- .container(-fluid) -->
 
