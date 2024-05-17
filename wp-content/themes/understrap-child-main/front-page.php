@@ -34,31 +34,31 @@ get_header();
 <div class="container my-5">
     <div class="row row-cols-md-5 row-cols-2 g-3   ">
         <div class="col ">
-            <div class=" d-flex flex-column shadow  p-4 h-100   rounded ">
+            <div class=" d-flex flex-column shadow  p-4 h-100   rounded text-center ">
                 <i class="fa-solid fa-percent  fs-5"></i>
                 Discounts
             </div>
         </div>
         <div class="col">
-            <div class=" d-flex flex-column shadow p-4  h-100 rounded ">
+            <div class=" d-flex flex-column shadow p-4  h-100 rounded text-center ">
                 <i class="fa-solid fa-rotate-left fs-5"></i>
                 Return Policy
             </div>
         </div>
         <div class="col">
-            <div class="d-flex flex-column shadow p-4 h-100 rounded ">
+            <div class="d-flex flex-column shadow p-4 h-100 rounded text-center ">
                 <i class="fa-solid fa-phone fs-5"></i>
                 Support 24/7
             </div>
         </div>
         <div class="col">
-            <div class="d-flex  flex-column shadow p-4  h-100 rounded ">
+            <div class="d-flex  flex-column shadow p-4  h-100 rounded text-center">
                 <i class="fa-solid fa-truck fs-5"></i>
                 Free Delivery
             </div>
         </div>
         <div class="col">
-            <div class="d-flex  flex-column shadow p-4  h-100 rounded ">
+            <div class="d-flex  flex-column shadow p-4  h-100 rounded text-center">
                 <i class="fa-solid fa-shield-halved fs-5"></i>
                 Secure Payment
             </div>
@@ -73,7 +73,6 @@ get_header();
             <div class="card">
                 <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <!-- <h5 class="card-title">Special title treatment</h5> -->
                     <p class="card-text fs-6 fw-lighter">add text here.</p>
                     <a href="#" class="btn btn-outline-primary fs-6 ">Add to Cart 1</a>
                 </div>
@@ -83,7 +82,6 @@ get_header();
             <div class="card">
                 <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <!-- <h5 class="card-title">Special title treatment</h5> -->
                     <p class="card-text">add text here.</p>
                     <a href="#" class="btn btn-outline-primary ">Add to Cart 2</a>
                 </div>
@@ -93,7 +91,6 @@ get_header();
             <div class="card">
                 <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <!-- <h5 class="card-title">Special title treatment</h5> -->
                     <p class="card-text ">add text here.</p>
                     <a href="#" class="btn btn-outline-primary ">Add to Cart 3</a>
                 </div>
@@ -103,7 +100,6 @@ get_header();
             <div class="card">
                 <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <!-- <h5 class="card-title">Special title treatment</h5> -->
                     <p class="card-text ">add text here.</p>
                     <a href="#" class="btn btn-outline-primary">Add to Cart 4</a>
                 </div>
@@ -114,7 +110,6 @@ get_header();
             <div class="card">
                 <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <!-- <h5 class="card-title">Special title treatment</h5> -->
                     <p class="card-text">add text here.</p>
                     <a href="#" class="btn btn-outline-primary">Add to Cart 5</a>
                 </div>
@@ -124,14 +119,25 @@ get_header();
             <div class="card">
                 <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <!-- <h5 class="card-title">Special title treatment</h5> -->
                     <p class="card-text ">add text here.</p>
                     <a href="#" class="btn btn-outline-primary">Add to Cart 6</a>
                 </div>
             </div>
         </div>
     </div>
-
+</div>
+<div class="container">
+    <div class="row align-items-center flex-column flex-md-row">
+        <div class="col">
+            <img src="/wp-content/uploads/2024/05/healthy.webp" class="img-fluid" alt="...">
+        </div>
+        <div class="col py-5">
+            <h5 class="text-success fw-bold ">About Us</h5>
+            <h1 class=" fw-bolder">We Believe In Working With Accredited Farmers</h1>
+            <p class="lead ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo et facere, itaque aspernatur quidem officia quia voluptatibus in dolore laborum alias enim deserunt repudiandae qui tempora, vitae corporis exercitationem.</p>
+            <a href="#" class="btn btn-outline-success fw-bold">Learn More</a>
+        </div>
+    </div>
 </div>
 <?php
 get_footer();
