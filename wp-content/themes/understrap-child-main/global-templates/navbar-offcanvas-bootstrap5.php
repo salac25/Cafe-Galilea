@@ -25,9 +25,10 @@ $container = get_theme_mod('understrap_container_type');
 	<div class="<?php echo esc_attr($container); ?>">
 
 		<!-- Your site branding in the menu -->
+
 		<?php get_template_part('global-templates/navbar-branding'); ?>
 
-		<button class="navbar-toggler text-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavOffcanvas" aria-controls="navbarNavOffcanvas" aria-expanded="false" aria-label="<?php esc_attr_e('Open menu', 'understrap'); ?>">
+		<button class="navbar-toggler text-primary order-2 order-md-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavOffcanvas" aria-controls="navbarNavOffcanvas" aria-expanded="false" aria-label="<?php esc_attr_e('Open menu', 'understrap'); ?>">
 			<span class="navbar-toggler-icon text-primary"></span>
 		</button>
 
@@ -42,7 +43,7 @@ $container = get_theme_mod('understrap_container_type');
 			wp_nav_menu(
 				array(
 					'theme_location'  => 'primary',
-					'container_class' => 'offcanvas-body',
+					'container_class' => 'offcanvas-body justify-content-center',
 					'container_id'    => '',
 					'menu_class'      => 'navbar-nav',
 					'fallback_cb'     => '',
@@ -54,7 +55,7 @@ $container = get_theme_mod('understrap_container_type');
 			?>
 		</div><!-- .offcanvas -->
 
-		<ul class="shop-menus list-unstyled m-0 d-flex align-items-center gap-3 d-none d-md-flex">
+		<ul class="shop-menus list-unstyled m-0 d-flex align-items-center gap-3 d-md-flex">
 			<li>
 				<button class="bg-transparent border-0 p-0">
 					<i class="fa-solid fa-magnifying-glass"></i>
@@ -62,12 +63,20 @@ $container = get_theme_mod('understrap_container_type');
 			</li>
 			<li>
 				<a href="/">
-					<i class="fa-regular fa-user"></i>
+					<i class="fa-solid fa-store"></i>
 				</a>
 			</li>
 			<li>
-				<a href="/">
+				<a class="position-relative" href="<?php echo wc_get_cart_url(); ?>" class="custom-cart-icon">
 					<i class="fa-solid fa-cart-shopping"></i>
+					<?php custom_cart_count(); ?>
+				</a>
+
+			</li>
+			<li>
+				<a href="/">
+					<i class="fa-regular fa-user"></i>
+
 				</a>
 			</li>
 		</ul>

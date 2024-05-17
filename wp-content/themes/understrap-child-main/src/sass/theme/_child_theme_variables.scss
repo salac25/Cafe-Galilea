@@ -10,4 +10,7 @@ $body-color: #222529;
 
 $font-family-base: "Open Sans", sans-serif;
 $headings-font-family: "Cormorant", serif;
+$headings-font-weight: 700;
+$headings-color: $primary;
+$h2-font-size: clamp(1.5rem, 0.7777rem + 3.0817vw, 2.75rem);
 // $headings-color: $clr-text-title;
