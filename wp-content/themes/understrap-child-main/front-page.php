@@ -31,7 +31,7 @@ get_header();
     </div>
 </div>
 
-<!-- <div class="container my-5">
+<div class="container my-5">
     <div class="row row-cols-md-5 row-cols-2 g-3   ">
         <div class="col ">
             <div class=" d-flex flex-column shadow  p-4 h-100   rounded text-center ">
@@ -65,16 +65,16 @@ get_header();
         </div>
 
     </div>
-</div> -->
+</div>
 
 <!-- Shop By Category -->
-<!-- <section class="container ">
+<!-- <section class="container">
     <div class=" row-cols-sm-2 row-cols-md-3 row-cols-2 row p-3 g-4  text-center fs-6 fw-lighter">
         <div class="col">
             <div class="card">
                 <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
                 <div class="card-body">
-                 
+
                     <p class="card-text fs-6 fw-lighter">add text here.</p>
                     <a href="#" class="btn btn-outline-primary fs-6 ">Add to Cart 1</a>
                 </div>
@@ -84,7 +84,7 @@ get_header();
             <div class="card">
                 <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
                 <div class="card-body">
-                 
+
                     <p class="card-text">add text here.</p>
                     <a href="#" class="btn btn-outline-primary ">Add to Cart 2</a>
                 </div>
@@ -94,7 +94,7 @@ get_header();
             <div class="card">
                 <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
                 <div class="card-body">
-                 
+
                     <p class="card-text ">add text here.</p>
                     <a href="#" class="btn btn-outline-primary ">Add to Cart 3</a>
                 </div>
@@ -104,7 +104,7 @@ get_header();
             <div class="card">
                 <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
                 <div class="card-body">
-                 
+
                     <p class="card-text ">add text here.</p>
                     <a href="#" class="btn btn-outline-primary">Add to Cart 4</a>
                 </div>
@@ -115,7 +115,7 @@ get_header();
             <div class="card">
                 <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
                 <div class="card-body">
-                 
+
                     <p class="card-text">add text here.</p>
                     <a href="#" class="btn btn-outline-primary">Add to Cart 5</a>
                 </div>
@@ -125,14 +125,27 @@ get_header();
             <div class="card">
                 <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
                 <div class="card-body">
-                 
+
                     <p class="card-text ">add text here.</p>
                     <a href="#" class="btn btn-outline-primary">Add to Cart 6</a>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section> -->
+
+<!-- Main Menu -->
+<section class="container">
+    <div class="d-flex justify-content-center align-items-center flex-column">
+        <h2 class="text-center">Main Menu</h2>
+        <p class="w-25">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ea!</p>
+    </div>
+
+    <div class="py-5">
+        <?php echo do_shortcode('[products columns=4 limit=8]') ?>
+    </div>
+</section>
+
 <div class="container">
     <div class="row align-items-center flex-column flex-md-row">
         <div class="col">
