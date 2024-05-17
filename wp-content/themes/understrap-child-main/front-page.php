@@ -1,6 +1,6 @@
 <?php
 get_header();
-?><div class="container-fluid  py-3">
+?><div class="container  py-3">
     <div class="row">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -31,7 +31,7 @@ get_header();
     </div>
 </div>
 
-<div class="container my-5">
+<!-- <div class="container my-5">
     <div class="row row-cols-md-5 row-cols-2 g-3   ">
         <div class="col ">
             <div class=" d-flex flex-column shadow  p-4 h-100   rounded text-center ">
@@ -65,14 +65,16 @@ get_header();
         </div>
 
     </div>
-</div>
+</div> -->
 
-<div class="container ">
+<!-- Shop By Category -->
+<!-- <section class="container ">
     <div class=" row-cols-sm-2 row-cols-md-3 row-cols-2 row p-3 g-4  text-center fs-6 fw-lighter">
         <div class="col">
             <div class="card">
                 <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
                 <div class="card-body">
+                 
                     <p class="card-text fs-6 fw-lighter">add text here.</p>
                     <a href="#" class="btn btn-outline-primary fs-6 ">Add to Cart 1</a>
                 </div>
@@ -82,6 +84,7 @@ get_header();
             <div class="card">
                 <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
                 <div class="card-body">
+                 
                     <p class="card-text">add text here.</p>
                     <a href="#" class="btn btn-outline-primary ">Add to Cart 2</a>
                 </div>
@@ -91,6 +94,7 @@ get_header();
             <div class="card">
                 <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
                 <div class="card-body">
+                 
                     <p class="card-text ">add text here.</p>
                     <a href="#" class="btn btn-outline-primary ">Add to Cart 3</a>
                 </div>
@@ -100,6 +104,7 @@ get_header();
             <div class="card">
                 <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
                 <div class="card-body">
+                 
                     <p class="card-text ">add text here.</p>
                     <a href="#" class="btn btn-outline-primary">Add to Cart 4</a>
                 </div>
@@ -110,6 +115,7 @@ get_header();
             <div class="card">
                 <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
                 <div class="card-body">
+                 
                     <p class="card-text">add text here.</p>
                     <a href="#" class="btn btn-outline-primary">Add to Cart 5</a>
                 </div>
@@ -119,6 +125,7 @@ get_header();
             <div class="card">
                 <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
                 <div class="card-body">
+                 
                     <p class="card-text ">add text here.</p>
                     <a href="#" class="btn btn-outline-primary">Add to Cart 6</a>
                 </div>

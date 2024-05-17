@@ -76,8 +76,6 @@ $navbar_type       = get_theme_mod('understrap_navbar_type', 'collapse');
 									<small>0949 195 9421</small>
 								</li>
 							</ul>
-
-
 						</div>
 
 					</div>
