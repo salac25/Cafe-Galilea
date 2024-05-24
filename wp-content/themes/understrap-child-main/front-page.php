@@ -34,32 +34,32 @@ get_header();
 <div class="container my-5">
     <div class="row row-cols-md-5 row-cols-2 g-3   ">
         <div class="col ">
-            <div class=" d-flex flex-column shadow  p-4 h-100   rounded text-center ">
-                <i class="fa-solid fa-percent  fs-5"></i>
+            <div class=" d-flex flex-column shadow  p-4 h-100   rounded text-center">
+                <i class="fa-solid fa-percent fs-5 mb-2"></i>
                 Discounts
             </div>
         </div>
         <div class="col">
-            <div class=" d-flex flex-column shadow p-4  h-100 rounded text-center ">
-                <i class="fa-solid fa-rotate-left fs-5"></i>
+            <div class=" d-flex flex-column shadow p-4 h-100 rounded text-center ">
+                <i class="fa-solid fa-rotate-left fs-5 mb-2"></i>
                 Return Policy
             </div>
         </div>
         <div class="col">
             <div class="d-flex flex-column shadow p-4 h-100 rounded text-center ">
-                <i class="fa-solid fa-phone fs-5"></i>
+                <i class="fa-solid fa-phone fs-5 mb-2"></i>
                 Support 24/7
             </div>
         </div>
         <div class="col">
             <div class="d-flex  flex-column shadow p-4  h-100 rounded text-center">
-                <i class="fa-solid fa-truck fs-5"></i>
+                <i class="fa-solid fa-truck fs-5 pb-2"></i>
                 Free Delivery
             </div>
         </div>
         <div class="col">
             <div class="d-flex  flex-column shadow p-4  h-100 rounded text-center">
-                <i class="fa-solid fa-shield-halved fs-5"></i>
+                <i class="fa-solid fa-shield-halved fs-5 mb-2"></i>
                 Secure Payment
             </div>
         </div>
@@ -155,9 +155,56 @@ get_header();
             <h5 class="text-success fw-bold ">About Us</h5>
             <h1 class=" fw-bolder">We Believe In Working With Accredited Farmers</h1>
             <p class="lead ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo et facere, itaque aspernatur quidem officia quia voluptatibus in dolore laborum alias enim deserunt repudiandae qui tempora, vitae corporis exercitationem.</p>
-            <a href="#" class="btn btn-outline-success fw-bold">Learn More</a>
+            <a href="#" class="btn btn-outline-primary fw-bold">Learn More</a>
         </div>
     </div>
+</div>
+
+<!------------------------------ achievement section --------------------------------->
+<div class="container">
+    <div class=" row d-flex justify-content-around bg-secondary
+     row-cols-sm-2 row-cols-md-2 row-cols-lg-4 row-cols-2 gap-0 p-2 ">
+        <div class="col">
+            <div class="d-flex align-items-center  justify-content-center gap-3">
+                <i class="fa-solid fa-users text-primary fa-3x"></i>
+                <div>
+                    <h2 class="text-primary m-0">1800+</h2>
+                    <small class=" text-primary">Satisfied Clients</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="d-flex align-items-center  justify-content-center  gap-3">
+                <i class="fa-solid fa-hands-holding text-primary fa-3x"></i>
+                <div>
+                    <h2 class=" text-primary m-0 ">362+</h2>
+                    <small class=" text-primary"> Active Products</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="d-flex align-items-center  justify-content-center  gap-3">
+                <i class="fa-solid fa-leaf text-primary fa-3x"></i>
+                <div>
+                    <h2 class=" text-primary m-0 ">30+</h2>
+                    <small class=" text-primary">Food Categories</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="d-flex align-items-center  justify-content-center gap-4">
+                <i class="fa-solid fa-award text-primary fa-4x"></i>
+                <div>
+                    <h2 class="text-primary m-0">1800+</h2>
+                    <small class=" text-primary">Award Winning</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------------- Review Section --------------------->
+<div class="container my-5  bg-secondary">
+    <?php echo do_shortcode('[trustindex no-registration=google]'); ?>
 </div>
 <?php
 get_footer();
