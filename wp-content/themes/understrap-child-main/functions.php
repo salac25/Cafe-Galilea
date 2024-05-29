@@ -39,7 +39,7 @@ function theme_enqueue_styles()
 	$suffix = defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? '' : '.min';
 	// Grab asset urls.
 	$theme_styles  = "/css/child-theme{$suffix}.css";
-	$theme_scripts = "/js/child-theme{$suffix}.js";
+	$theme_scripts = "/js/child-theme.js";
 
 	$css_version = $theme_version . '.' . filemtime(get_stylesheet_directory() . $theme_styles);
 
@@ -54,6 +54,7 @@ function theme_enqueue_styles()
 	}
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
+
 
 
 
@@ -99,21 +100,50 @@ function understrap_child_customize_controls_js()
 }
 add_action('customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js');
 
-/* WooCommerce Cart Count */
 
-function custom_cart_count_fragments($fragments)
+function custom_enqueue_scripts()
 {
-	ob_start();
-	custom_cart_count();
-	$fragments['#custom-cart-count'] = ob_get_clean();
-	return $fragments;
-}
-add_filter('woocommerce_add_to_cart_fragments', 'custom_cart_count_fragments');
+	// Enqueue jQuery if not already loaded
+	wp_enqueue_script('jquery');
 
-function custom_cart_count()
-{
-	$cart_count = WC()->cart->get_cart_contents_count();
-?>
-	<span id="custom-cart-count" class="cart-count position-absolute"><?php echo $cart_count; ?></span>
-<?php
+
+	// Enqueue custom script for AJAX cart update
+	wp_enqueue_script('ajax-cart-update', get_template_directory_uri() . '/js/ajax-cart-update.js', array('jquery'), '1.0', true);
+
+	// Localize script to pass AJAX URL to JavaScript
+	wp_localize_script('ajax-cart-update', 'ajax_cart_update_params', array(
+		'ajax_url' => admin_url('admin-ajax.php')
+	));
 }
+add_action('wp_enqueue_scripts', 'custom_enqueue_scripts');
+
+// Update cart count
+function update_cart_count()
+{
+	$cart_count = count(WC()->cart->get_cart());
+
+	echo json_encode(array('cart_count' => $cart_count));
+	wp_die();
+}
+add_action('wp_ajax_update_cart_count', 'update_cart_count');
+add_action('wp_ajax_nopriv_update_cart_count', 'update_cart_count');
+
+// Remove product from cart
+function remove_from_cart()
+{
+	$product_id = intval($_POST['product_id']);
+	foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) {
+		if ($cart_item['product_id'] == $product_id) {
+			WC()->cart->remove_cart_item($cart_item_key);
+			break;
+		}
+	}
+	echo json_encode(array('success' => true));
+	wp_die();
+}
+add_action('wp_ajax_remove_from_cart', 'remove_from_cart');
+add_action('wp_ajax_nopriv_remove_from_cart', 'remove_from_cart');
+
+/* Remove undo notification */
+
+add_filter('woocommerce_cart_item_removed_notice_type', '__return_null');

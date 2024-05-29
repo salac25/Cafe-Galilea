@@ -147,9 +147,9 @@ get_header();
 </section>
 
 <div class="container">
-    <div class="row align-items-center flex-column flex-md-row">
+    <div class="row align-items-center flex-column flex-md-row gx-5">
         <div class="col">
-            <img src="/wp-content/uploads/2024/05/healthy.webp" class="img-fluid" alt="...">
+            <img src="/wp-content/uploads/2024/05/about-img-scaled.jpg" class="img-fluid" alt="...">
         </div>
         <div class="col py-5">
             <h5 class="text-success fw-bold ">About Us</h5>
