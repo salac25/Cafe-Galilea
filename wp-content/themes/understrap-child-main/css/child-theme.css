@@ -15024,6 +15024,58 @@ figure.woocommerce-product-gallery__wrapper {
   position: absolute;
 }
 
+.contact-page div.wpforms-container-full, div.wpforms-container-full {
+  font-weight: 700;
+}
+
+#wpforms-150-field_0-container {
+  border: 1rem;
+}
+
+#wpforms-150-field_1-container .wpforms-field-label {
+  color: #140b40 !important;
+}
+
+#wpforms-150-field_2-container {
+  padding: auto;
+}
+
+.wpforms-submit-container {
+  display: flex;
+  color: #140b40;
+}
+
+.wpforms-submit {
+  color: #ededed !important;
+  background-color: #140b40 !important;
+}
+
+.wpforms-submit:hover {
+  background-color: #ededed !important;
+  color: #140b40 !important;
+}
+
+.wpforms-field-label {
+  color: #fff;
+}
+
+#wpforms-150-field_0-container .wpforms-field-label {
+  color: #140b40;
+}
+
+#wpforms-150-field_2-container .wpforms-field-label {
+  color: #140b40;
+}
+
+.feedback {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  background-color: #fff;
+  border-radius: 5px 5px 5px 5px;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;
