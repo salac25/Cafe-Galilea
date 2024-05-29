@@ -67,16 +67,24 @@ $container = get_theme_mod('understrap_container_type');
 				</a>
 			</li>
 			<li>
-				<a class="position-relative" href="<?php echo wc_get_cart_url(); ?>" class="custom-cart-icon">
+
+
+				<a class="position-relative" href="<?php echo wc_get_cart_url(); ?>">
 					<i class="fa-solid fa-cart-shopping"></i>
-					<?php custom_cart_count(); ?>
+					<span class="cart-count position-absolute"><?php echo count(WC()->cart->get_cart()) ?></span>
 				</a>
+
+
+				<!-- <a class="position-relative" href="<?php echo wc_get_cart_url(); ?>" class="custom-cart-icon">
+					<i class="fa-solid fa-cart-shopping"></i>
+					<?php //custom_cart_count(); 
+					?>
+				</a> -->
 
 			</li>
 			<li>
 				<a href="/">
 					<i class="fa-regular fa-user"></i>
-
 				</a>
 			</li>
 		</ul>
