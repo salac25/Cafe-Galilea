@@ -70,53 +70,62 @@ background: rgb(12, 12, 37) !important;
 
 
 // contact section //
-// .wrapper{
-//   background-image: url('/wp-content/uploads/2024/05/background-image.jpg');
-//   min-height: 100vh;
-// }
-.contact-page div.wpforms-container-full, div.wpforms-container-full{
-  font-weight: 700;
-}
-#wpforms-150-field_0-container{
-  border: 1rem;
-}
-// #wpforms-form-150{
-//   font-weight: 700;
-// }
-#wpforms-150-field_1-container .wpforms-field-label  {
-  color:$primary!important;
-}
-#wpforms-150-field_2-container{
-  padding: auto;
-}
-.wpforms-submit-container{
-  display: flex;
- color: $primary;
-}
-.wpforms-submit{
+
+
+// feedback submit button
+.wpforms-submit
+{
   color: $secondary !important;
   background-color: $primary !important;
-
+  font-weight:700!important;
+  font-style: normal;
+  width: 100% !important;;
+  justify-content: center;
 }
-.wpforms-submit:hover{
+.wpforms-submit:hover
+{
   background-color: $secondary!important;
   color: $primary !important;
 }
-.wpforms-field-label{
-  color:#fff;
-}
-#wpforms-150-field_0-container .wpforms-field-label{
-color: $primary;
-}
-#wpforms-150-field_2-container .wpforms-field-label{
-color: $primary;
+
+// feedback field columns section
+#wpforms-150-field_0 ,#wpforms-150-field_1, #wpforms-150-field_2
+{
+  border:2px solid $secondary;
 }
 
-.feedback{
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight:700;
-  font-style: normal;
-  background-color: #fff;
-  border-radius: 5px 5px 5px 5px;
+#wpforms-150-field_0:hover{
+  border:2px solid $primary;
+} 
+
+#wpforms-150-field_1:hover{
+  border:2px solid $primary;
+}
+#wpforms-150-field_2:hover{
+  border:2px solid $primary;
+}
+
+// feedback label section
+#wpforms-150-field_0-container .wpforms-field-label 
+,#wpforms-150-field_1-container .wpforms-field-label 
+,#wpforms-150-field_2-container .wpforms-field-label{
+color: $primary;
+font-weight: 700;
+font-style: normal;
+}
+
+// feedback container
+.feedback
+{
+  border:1px solid $primary;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+.map-area{
+  display: flex!important;
+  padding: 0!important;
+  height: fit-content;
+}
+.main{
+  display: flex;
+  align-items: center;
 }
