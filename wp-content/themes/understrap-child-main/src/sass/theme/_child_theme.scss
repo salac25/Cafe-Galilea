@@ -33,31 +33,39 @@
   height: 20px;
 }
 
-// --Review Section-- //
-.ti-footer{
+/* Remove View Cart Link */
+a.added_to_cart.wc-forward {
   display: none;
 }
-.ti-reviews-container{
-padding-bottom:5px;}
-.container{
-  border-radius:1rem 1rem 1rem 1rem;
+
+// --Review Section-- //
+.ti-footer {
+  display: none;
 }
-.ti-widget.ti-goog .ti-controls .ti-next:before, .ti-widget.ti-goog .ti-controls .ti-prev::before {
-    content: "";
-    background: rgb(12, 12, 37) !important;
-    width: 17px;
-    height: 3px;
-    display: block;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    border-radius: 2px;
-    position: absolute;
+.ti-reviews-container {
+  padding-bottom: 5px;
+}
+.container {
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+.ti-widget.ti-goog .ti-controls .ti-next:before,
+.ti-widget.ti-goog .ti-controls .ti-prev::before {
+  content: "";
+  background: rgb(12, 12, 37) !important;
+  width: 17px;
+  height: 3px;
+  display: block;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-radius: 2px;
+  position: absolute;
 }
 
-.ti-widget.ti-goog .ti-controls .ti-next:after, .ti-widget.ti-goog .ti-controls .ti-prev::after {
+.ti-widget.ti-goog .ti-controls .ti-next:after,
+.ti-widget.ti-goog .ti-controls .ti-prev::after {
   content: "";
-background: rgb(12, 12, 37) !important;
+  background: rgb(12, 12, 37) !important;
   width: 17px;
   height: 3px;
   display: block;
@@ -68,64 +76,60 @@ background: rgb(12, 12, 37) !important;
   position: absolute;
 }
 
-
 // contact section //
 
-
 // feedback submit button
-.wpforms-submit
-{
+.wpforms-submit {
   color: $secondary !important;
   background-color: $primary !important;
-  font-weight:700!important;
+  font-weight: 700 !important;
   font-style: normal;
-  width: 100% !important;;
+  width: 100% !important;
   justify-content: center;
 }
-.wpforms-submit:hover
-{
-  background-color: $secondary!important;
+.wpforms-submit:hover {
+  background-color: $secondary !important;
   color: $primary !important;
 }
 
 // feedback field columns section
-#wpforms-150-field_0 ,#wpforms-150-field_1, #wpforms-150-field_2
-{
-  border:2px solid $secondary;
+#wpforms-150-field_0,
+#wpforms-150-field_1,
+#wpforms-150-field_2 {
+  border: 2px solid $secondary;
 }
 
-#wpforms-150-field_0:hover{
-  border:2px solid $primary;
-} 
-
-#wpforms-150-field_1:hover{
-  border:2px solid $primary;
+#wpforms-150-field_0:hover {
+  border: 2px solid $primary;
 }
-#wpforms-150-field_2:hover{
-  border:2px solid $primary;
+
+#wpforms-150-field_1:hover {
+  border: 2px solid $primary;
+}
+#wpforms-150-field_2:hover {
+  border: 2px solid $primary;
 }
 
 // feedback label section
-#wpforms-150-field_0-container .wpforms-field-label 
-,#wpforms-150-field_1-container .wpforms-field-label 
-,#wpforms-150-field_2-container .wpforms-field-label{
-color: $primary;
-font-weight: 700;
-font-style: normal;
+#wpforms-150-field_0-container .wpforms-field-label,
+#wpforms-150-field_1-container .wpforms-field-label,
+#wpforms-150-field_2-container .wpforms-field-label {
+  color: $primary;
+  font-weight: 700;
+  font-style: normal;
 }
 
 // feedback container
-.feedback
-{
-  border:1px solid $primary;
+.feedback {
+  border: 1px solid $primary;
   border-radius: 1rem 1rem 1rem 1rem;
 }
-.map-area{
-  display: flex!important;
-  padding: 0!important;
+.map-area {
+  display: flex !important;
+  padding: 0 !important;
   height: fit-content;
 }
-.main{
+.main {
   display: flex;
   align-items: center;
 }
