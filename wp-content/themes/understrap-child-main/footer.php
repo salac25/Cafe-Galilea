@@ -89,7 +89,7 @@ $container = get_theme_mod('understrap_container_type');
 									</div>
 
 									<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-										<h1 class="mb-4 font-weight-bold text-secondary">Talk to Us</h1>
+										<h1 class="mb-4 font-weight-bold text-secondary">Contact Us</h1>
 										<p>
 											<a href="https://maps.app.goo.gl/2ZpAGjFxuMKEQEr7A" class="text-secondary"><i class="fa-solid fa-map-location-dot me-2"></i> San Pedro, Bustos, Bulacan 3007</a>
 										</p>
@@ -106,8 +106,9 @@ $container = get_theme_mod('understrap_container_type');
 								<div class="row text-center">
 									<div class="col-md-5 col-lg-6">
 										<small>
-											Copyright &copy2024 All rights reserved by:
 											<span class="text-secondary"><a href="cafegalilea.com" class="text-secondary text-decoration-none">CafeGalilea</a></span>
+											&copy; Copyright 2024 All rights reserved
+											<!-- &copy Copyright 2024 All rights reserved -->
 										</small>
 									</div>
 

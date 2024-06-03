@@ -68,4 +68,64 @@ background: rgb(12, 12, 37) !important;
   position: absolute;
 }
 
-// footer
+
+// contact section //
+
+
+// feedback submit button
+.wpforms-submit
+{
+  color: $secondary !important;
+  background-color: $primary !important;
+  font-weight:700!important;
+  font-style: normal;
+  width: 100% !important;;
+  justify-content: center;
+}
+.wpforms-submit:hover
+{
+  background-color: $secondary!important;
+  color: $primary !important;
+}
+
+// feedback field columns section
+#wpforms-150-field_0 ,#wpforms-150-field_1, #wpforms-150-field_2
+{
+  border:2px solid $secondary;
+}
+
+#wpforms-150-field_0:hover{
+  border:2px solid $primary;
+} 
+
+#wpforms-150-field_1:hover{
+  border:2px solid $primary;
+}
+#wpforms-150-field_2:hover{
+  border:2px solid $primary;
+}
+
+// feedback label section
+#wpforms-150-field_0-container .wpforms-field-label 
+,#wpforms-150-field_1-container .wpforms-field-label 
+,#wpforms-150-field_2-container .wpforms-field-label{
+color: $primary;
+font-weight: 700;
+font-style: normal;
+}
+
+// feedback container
+.feedback
+{
+  border:1px solid $primary;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+.map-area{
+  display: flex!important;
+  padding: 0!important;
+  height: fit-content;
+}
+.main{
+  display: flex;
+  align-items: center;
+}
