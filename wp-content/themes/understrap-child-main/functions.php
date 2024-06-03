@@ -120,7 +120,8 @@ add_action('wp_enqueue_scripts', 'custom_enqueue_scripts');
 // Update cart count
 function update_cart_count()
 {
-	$cart_count = count(WC()->cart->get_cart());
+	// $cart_count = count(WC()->cart->get_cart());
+	$cart_count = WC()->cart->get_cart_contents_count();
 
 	echo json_encode(array('cart_count' => $cart_count));
 	wp_die();
@@ -147,3 +148,6 @@ add_action('wp_ajax_nopriv_remove_from_cart', 'remove_from_cart');
 /* Remove undo notification */
 
 add_filter('woocommerce_cart_item_removed_notice_type', '__return_null');
+
+/* Remove default styles from woocommerce */
+add_filter('woocommerce_enqueue_styles', '__return_empty_array');

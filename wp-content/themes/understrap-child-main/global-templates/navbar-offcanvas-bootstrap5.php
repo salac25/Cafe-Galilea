@@ -71,7 +71,7 @@ $container = get_theme_mod('understrap_container_type');
 
 				<a class="position-relative" href="<?php echo wc_get_cart_url(); ?>">
 					<i class="fa-solid fa-cart-shopping"></i>
-					<span class="cart-count position-absolute"><?php echo count(WC()->cart->get_cart()) ?></span>
+					<span class="cart-count position-absolute"><?php echo WC()->cart->get_cart_contents_count() ?></span>
 				</a>
 
 
