@@ -7,16 +7,20 @@ get_header();
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://placehold.co/600x300" class="d-block w-100" alt="...">
+                    <img src="/wp-content/uploads/2024/06/Home-Banner.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://placehold.co/600x300" class="d-block w-100" alt="...">
+                    <img src="/wp-content/uploads/2024/06/Home-Banner02.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://placehold.co/600x300" class="d-block w-100" alt="...">
+                    <img src="/wp-content/uploads/2024/06/Home-Banner03-768x322-1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/wp-content/uploads/2024/06/Home-Banner04.png" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -31,7 +35,7 @@ get_header();
     </div>
 </div>
 
-<div class="container my-5">
+<div class="container my-5 text-primary">
     <div class="row row-cols-md-5 row-cols-2 g-3   ">
         <div class="col ">
             <div class=" d-flex flex-column shadow  p-4 h-100   rounded text-center">
@@ -138,23 +142,37 @@ get_header();
 <section class="container">
     <div class="d-flex justify-content-center align-items-center flex-column">
         <h2 class="text-center">Main Menu</h2>
-        <p class="w-25">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ea!</p>
+        <p class="w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ea!</p>
     </div>
 
     <div class="py-5">
         <?php echo do_shortcode('[products columns=4 limit=8]') ?>
     </div>
 </section>
-
-<div class="container">
+<!---about us section ---->
+<div class="container my-3">
     <div class="row align-items-center flex-column flex-md-row gx-5">
         <div class="col">
-            <img src="/wp-content/uploads/2024/05/about-img-scaled.jpg" class="img-fluid" alt="...">
+            <img src="/wp-content/uploads/2024/06/crew-cg.webp" class="img-fluid" alt="...">
         </div>
         <div class="col py-5">
-            <h5 class="text-success fw-bold ">About Us</h5>
-            <h1 class=" fw-bolder">We Believe In Working With Accredited Farmers</h1>
-            <p class="lead ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo et facere, itaque aspernatur quidem officia quia voluptatibus in dolore laborum alias enim deserunt repudiandae qui tempora, vitae corporis exercitationem.</p>
+            <h2 class="text-primary fw-bold ">About Us</h2>
+
+            <p>Simple and classy -these are two words that accurately
+                describe Café Galilea in its current state. But back in April 2015,
+                when it first opened under the supervision of Jesus P. Perez,
+                it was a humble cafe that catered to the hotel guests of Galilee Wonderland.</p>
+
+            ​
+
+            <p> If there is one thing that hadn't changed since its relocation and reopening on April 4,
+                2016 though, that would be our dedication to providing top-notch hospitality paired with
+                the finest aroma of our premium coffee beans and our delectable dining options to every
+                customer who steps foot inside the café. Offering a unique dining experience with a heart
+                and passion reflective of our sole purpose of bringing the best customer service to the café scene.
+                it remains to be one of the most affordable, accessible, and appetizing cafés in the Bulacan area.</p>
+
+            <p>Tel: 0925 716 3323 | Email: cafegalilea@yahoo.com</p>
             <a href="#" class="btn btn-outline-primary fw-bold">Learn More</a>
         </div>
     </div>

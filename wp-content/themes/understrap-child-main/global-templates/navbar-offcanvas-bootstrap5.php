@@ -62,7 +62,7 @@ $container = get_theme_mod('understrap_container_type');
 				</button>
 			</li>
 			<li>
-				<a href="/">
+				<a href="/shop">
 					<i class="fa-solid fa-store"></i>
 				</a>
 			</li>

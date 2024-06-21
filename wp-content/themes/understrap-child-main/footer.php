@@ -107,8 +107,7 @@ $container = get_theme_mod('understrap_container_type');
 									<div class="col-md-5 col-lg-6">
 										<small>
 											<span class="text-secondary"><a href="cafegalilea.com" class="text-secondary text-decoration-none">CafeGalilea</a></span>
-											&copy; Copyright 2024 All rights reserved
-											<!-- &copy Copyright 2024 All rights reserved -->
+											&copy; Copyright 2020-2022 All rights reserved
 										</small>
 									</div>
 

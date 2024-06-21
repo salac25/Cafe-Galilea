@@ -15088,6 +15088,203 @@ a.added_to_cart.wc-forward {
   align-items: center;
 }
 
+.woocommerce table.shop_table td {
+  border: none;
+}
+
+td {
+  color: #140b40 !important;
+}
+
+tr {
+  border-top: 1px solid #140b40;
+}
+
+tr td a {
+  text-decoration: none;
+}
+
+tr td a:hover {
+  color: gray;
+}
+
+.woocommerce-page #content table.cart img {
+  width: 150px !important;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+.woocommerce table.shop_table {
+  border-collapse: collapse;
+}
+
+.woocommerce table.shop_table_responsive tr,
+.woocommerce-page table.shop_table_responsive tr {
+  width: 100%;
+}
+
+.product-thumbnail img {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.woocommerce a.remove {
+  margin-top: 10px;
+  color: #140b40 !important;
+  background-color: #ededed !important;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+.woocommerce a.remove:hover {
+  color: #ededed !important;
+  background-color: #140b40 !important;
+}
+
+.quantity {
+  display: flex;
+  justify-content: center;
+}
+
+.woocommerce a.button.alt {
+  text-align: center;
+  color: #140b40 !important;
+  background-color: #ededed !important;
+}
+
+.woocommerce a.button.alt:hover {
+  color: #ededed !important;
+  background-color: #140b40 !important;
+}
+
+.cart-collaterals {
+  color: #140b40 !important;
+}
+
+.woocommerce table.shop_table {
+  border: none !important;
+}
+
+.woocommerce table.shop_table_responsive tbody th,
+.woocommerce-page table.shop_table_responsive tbody th {
+  display: flex;
+  flex-direction: row;
+}
+
+.woocommerce #content table.cart .product-thumbnail,
+.woocommerce table.cart .product-thumbnail,
+.woocommerce-page #content table.cart .product-thumbnail,
+.woocommerce-page table.cart .product-thumbnail {
+  display: flex;
+  justify-content: center;
+}
+
+.woocommerce table.shop_table_responsive tr td::before,
+.woocommerce-page table.shop_table_responsive tr td::before {
+  content: "";
+}
+
+.woocommerce table.shop_table_responsive tr td,
+.woocommerce-page table.shop_table_responsive tr td {
+  text-align: center !important;
+}
+
+.woocommerce .cart-collaterals .cart_totals,
+.woocommerce-page .cart-collaterals .cart_totals {
+  float: none !important;
+  width: auto;
+}
+
+.woocommerce table.shop_table_responsive tr:nth-child(2n) td,
+.woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
+  background-color: white !important;
+}
+
+#add_payment_method .cart-collaterals .cart_totals table th,
+.woocommerce-cart .cart-collaterals .cart_totals table th,
+.woocommerce-checkout .cart-collaterals .cart_totals table th {
+  width: 100%;
+}
+
+.entry-title {
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .cart-items-column,
+  .cart-info {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .woocommerce table.shop_table td {
+    padding: 0;
+  }
+  td {
+    font-size: medium;
+  }
+}
+.woocommerce-loop-product__title {
+  width: 170px;
+  letter-spacing: -0.05em;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.attachment-woocommerce_thumbnail {
+  width: 150px;
+}
+
+.woocommerce ul.products li.product a img {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title,
+.woocommerce ul.products li.product h3,
+.woocommerce ul.products li.product .h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  padding: 0px;
+}
+
+.woocommerce div.product span.price, .woocommerce ul.products li.product .price {
+  font-weight: bold;
+  color: #140b40 !important;
+}
+
+.woocommerce ul.products li.product a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease;
+}
+
+.woocommerce ul.products li.product a:hover {
+  transform: scale(1.1);
+}
+
+.add-to-cart-container {
+  display: flex;
+  justify-content: center;
+}
+
+.woocommerce div.product p.price, .woocommerce div.product .stock {
+  color: #140b40 !important;
+}
+
+.wc-block-product-categories-list-item ::marker {
+  content: "";
+}
+
+ul li a {
+  text-decoration: none;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;

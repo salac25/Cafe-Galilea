@@ -3,7 +3,7 @@
  * Plugin Name: WPC AJAX Add to Cart for WooCommerce
  * Plugin URI: https://wpclever.net/
  * Description: AJAX add to cart for WooCommerce products.
- * Version: 2.0.2
+ * Version: 2.0.3
  * Author: WPClever
  * Author URI: https://wpclever.net
  * Text Domain: wpc-ajax-add-to-cart
@@ -12,14 +12,14 @@
  * Requires at least: 4.0
  * Tested up to: 6.5
  * WC requires at least: 3.0
- * WC tested up to: 8.8
+ * WC tested up to: 8.9
  * License: GPLv2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
 
 defined( 'ABSPATH' ) || exit;
 
-! defined( 'WOOAA_VERSION' ) && define( 'WOOAA_VERSION', '2.0.2' );
+! defined( 'WOOAA_VERSION' ) && define( 'WOOAA_VERSION', '2.0.3' );
 ! defined( 'WOOAA_LITE' ) && define( 'WOOAA_LITE', __FILE__ );
 ! defined( 'WOOAA_FILE' ) && define( 'WOOAA_FILE', __FILE__ );
 ! defined( 'WOOAA_URI' ) && define( 'WOOAA_URI', plugin_dir_url( __FILE__ ) );
@@ -100,7 +100,7 @@ if ( ! class_exists( 'WPCleverWooaa' ) && class_exists( 'WC_Product' ) ) {
 		}
 
 		function admin_enqueue_scripts( $hook ) {
-			if ( strpos( $hook, 'wooaa' ) ) {
+			if ( str_contains( $hook, 'wooaa' ) ) {
 				wp_enqueue_style( 'wooaa-backend', WOOAA_URI . 'assets/css/backend.css', [ 'woocommerce_admin_styles' ], WOOAA_VERSION );
 				wp_enqueue_script( 'wooaa-backend', WOOAA_URI . 'assets/js/backend.js', [
 					'jquery',
@@ -176,22 +176,6 @@ if ( ! class_exists( 'WPCleverWooaa' ) && class_exists( 'WC_Product' ) ) {
 										?>
                                     </td>
                                 </tr>
-                                <tr class="heading">
-                                    <th colspan="2"><?php esc_html_e( 'Suggestion', 'wpc-ajax-add-to-cart' ); ?></th>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        To display custom engaging real-time messages on any wished positions, please install
-                                        <a href="https://wordpress.org/plugins/wpc-smart-messages/" target="_blank">WPC Smart Messages</a> plugin. It's free!
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        Wanna save your precious time working on variations? Try our brand-new free plugin
-                                        <a href="https://wordpress.org/plugins/wpc-variation-bulk-editor/" target="_blank">WPC Variation Bulk Editor</a> and
-                                        <a href="https://wordpress.org/plugins/wpc-variation-duplicator/" target="_blank">WPC Variation Duplicator</a>.
-                                    </td>
-                                </tr>
                                 <tr class="submit">
                                     <th colspan="2">
 										<?php settings_fields( 'wooaa_settings' ); ?><?php submit_button(); ?>
@@ -200,9 +184,22 @@ if ( ! class_exists( 'WPCleverWooaa' ) && class_exists( 'WC_Product' ) ) {
                             </table>
                         </form>
 					<?php } ?>
-                </div>
+                </div><!-- /.wpclever_settings_page_content -->
                 <div class="wpclever_settings_page_suggestion">
-					<?php do_action( 'wpclever_settings_page_suggestion' ); ?>
+                    <div class="wpclever_settings_page_suggestion_label">
+                        <span class="dashicons dashicons-yes-alt"></span> Suggestion
+                    </div>
+                    <div class="wpclever_settings_page_suggestion_content">
+                        <div>
+                            To display custom engaging real-time messages on any wished positions, please install
+                            <a href="https://wordpress.org/plugins/wpc-smart-messages/" target="_blank">WPC Smart Messages</a> plugin. It's free!
+                        </div>
+                        <div>
+                            Wanna save your precious time working on variations? Try our brand-new free plugin
+                            <a href="https://wordpress.org/plugins/wpc-variation-bulk-editor/" target="_blank">WPC Variation Bulk Editor</a> and
+                            <a href="https://wordpress.org/plugins/wpc-variation-duplicator/" target="_blank">WPC Variation Duplicator</a>.
+                        </div>
+                    </div>
                 </div>
             </div>
 			<?php
