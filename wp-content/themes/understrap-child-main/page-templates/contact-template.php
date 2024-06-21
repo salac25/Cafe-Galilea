@@ -51,7 +51,7 @@ if (is_page_template('page-templates/no-title.php')) {
                         <div class="content">
                             <p class="lead fs-5 text-primary p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, veniam.</p>
                             <div class="align-items-center my-5">
-                                <h2 class="intro text-center text-primary ">Let's Start a Conversation</h2>
+                                <!-- <h2 class="intro text-center text-primary ">Let's Start a Conversation</h2> -->
                                 <div class="main row justify-content-center flex-row flex-sm-row-reverse">
                                     <div class="map-area order-2 col-md-5 m-3">
                                         <iframe class="map w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3854.9013138659743!2d120.90753667591412!3d14.942590485585333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397aabb2ab1d2cb%3A0x5dfa965ca50ffb92!2sCafe%20Galilea%20Main%20Branch!5e0!3m2!1sen!2sph!4v1716833029783!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

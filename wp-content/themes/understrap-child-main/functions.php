@@ -150,4 +150,4 @@ add_action('wp_ajax_nopriv_remove_from_cart', 'remove_from_cart');
 add_filter('woocommerce_cart_item_removed_notice_type', '__return_null');
 
 /* Remove default styles from woocommerce */
-add_filter('woocommerce_enqueue_styles', '__return_empty_array');
+// add_filter('woocommerce_enqueue_styles', '__return_empty_array');
