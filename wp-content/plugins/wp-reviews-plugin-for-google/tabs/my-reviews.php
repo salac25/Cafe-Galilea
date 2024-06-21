@@ -157,9 +157,9 @@ $pageDetails = $pluginManagerInstance->getPageDetails();
 <?php endif; ?>
 <?php $pageDetails = $pluginManagerInstance->getPageDetails(); ?>
 <input type="hidden" id="ti-noreg-page-id" value="<?php echo esc_attr($pageDetails['id']); ?>" />
-<input type="hidden" id="ti-noreg-webhook-url" value="<?php echo $pluginManagerInstance->get_webhook_url(); ?>" />
+<input type="hidden" id="ti-noreg-webhook-url" value="<?php echo $pluginManagerInstance->getWebhookUrl(); ?>" />
 <input type="hidden" id="ti-noreg-email" value="<?php echo get_option('admin_email'); ?>" />
-<input type="hidden" id="ti-noreg-version" value="11.8.3" />
+<input type="hidden" id="ti-noreg-version" value="11.8.6" />
 
 <?php
 $reviewDownloadToken = get_option($pluginManagerInstance->get_option_name('review-download-token'));
@@ -172,8 +172,8 @@ update_option($pluginManagerInstance->get_option_name('review-download-token'), 
 <?php endif; ?>
 <div class="ti-upgrade-notice">
 <strong><?php echo __('UPGRADE to PRO Features', 'trustindex-plugin'); ?></strong>
-<p><?php echo sprintf(__('Automatic review update, creating unlimited review widgets, downloading and displaying all reviews, %d review platforms available!', 'trustindex-plugin'), 131); ?></p>
-<a href="https://www.trustindex.io/ti-redirect.php?a=sys&c=wp-google-pro" class="ti-btn"><?php echo __('Create a Free Account for More Features', 'trustindex-plugin'); ?></a>
+<p><?php echo sprintf(__('Automatic review update, creating unlimited review widgets, downloading and displaying all reviews, %d review platforms available!', 'trustindex-plugin'), 133); ?></p>
+<?php echo $pluginManagerInstance->getProFeatureButton('wp-google-pro'); ?>
 </div>
 
 <?php if (!count($reviews)): ?>
@@ -206,6 +206,7 @@ update_option($pluginManagerInstance->get_option_name('review-download-token'), 
 <td>
 <div class="ti-review-content"><?php echo $reviewText; ?></div>
 <?php
+
 $state = 'reply';
 if ($review->reply) {
 $state = 'replied';
@@ -248,6 +249,7 @@ $hideReplyButton = get_option($pluginManagerInstance->get_option_name('review-do
 <a href="<?php echo esc_attr($review->id); ?>" data-nonce="<?php echo wp_create_nonce('ti-save-reply'); ?>" class="ti-btn ti-btn-sm btn-post-reply"><?php echo sprintf(__('Upload reply to %s', 'trustindex-plugin'), 'Google'); ?></a>
 <a href="#" class="ti-btn ti-btn-sm ti-btn-no-background btn-hide-ai-reply"><?php echo __('Cancel', 'trustindex-plugin'); ?></a>
 </div>
+
 <div class="ti-reply-box-state state-replied">
 <div class="ti-button-dropdown-title">
 <strong><?php echo sprintf(__('Reply by %s', 'trustindex-plugin'), $pageDetails['name']); ?></strong>
@@ -258,6 +260,7 @@ $hideReplyButton = get_option($pluginManagerInstance->get_option_name('review-do
 <a href="<?php echo esc_attr($review->id); ?>" class="ti-btn ti-btn-sm ti-btn-white btn-show-edit-reply"><?php echo __('Edit reply', 'trustindex-plugin'); ?></a>
 <?php endif; ?>
 </div>
+
 <div class="ti-reply-box-state state-edit-reply">
 <div class="ti-button-dropdown-title">
 <strong><?php echo __('Edit reply', 'trustindex-plugin'); ?></strong>
@@ -342,25 +345,3 @@ $tiCampaign1 = 'wp-google-4';
 $tiCampaign2 = 'wp-google-5';
 include(plugin_dir_path(__FILE__ ) . '../include/get-more-customers-box.php');
 ?>
-<?php if (class_exists('Woocommerce')): ?>
-<div class="ti-box">
-<div class="ti-box-header"><?php echo __('Collect reviews automatically for your WooCommerce shop', 'trustindex-plugin'); ?></div>
-<?php if (!class_exists('TrustindexCollectorPlugin')): ?>
-<p><?php echo sprintf(__("Download our new <a href='%s' target='_blank'>%s</a> plugin and get features for free!", 'trustindex-plugin'), 'https://wordpress.org/plugins/customer-reviews-collector-for-woocommerce/', 'Customer Reviews Collector for WooCommerce'); ?></p>
-<?php endif; ?>
-<ul class="ti-check-list">
-<li><?php echo __('Send unlimited review invitations for free', 'trustindex-plugin'); ?></li>
-<li><?php echo __('E-mail templates are fully customizable', 'trustindex-plugin'); ?></li>
-<li><?php echo __('Collect reviews on 100+ review platforms (Google, Facebook, Yelp, etc.)', 'trustindex-plugin'); ?></li>
-</ul>
-<?php if (class_exists('TrustindexCollectorPlugin')): ?>
-<a href="?page=customer-reviews-collector-for-woocommerce%2Fadmin.php&tab=settings" class="ti-btn">
-<?php echo __('Collect reviews automatically', 'trustindex-plugin'); ?>
-</a>
-<?php else: ?>
-<a href="https://wordpress.org/plugins/customer-reviews-collector-for-woocommerce/" target="_blank" class="ti-btn">
-<?php echo __('Download plugin', 'trustindex-plugin'); ?>
-</a>
-<?php endif; ?>
-</div>
-<?php endif; ?>
