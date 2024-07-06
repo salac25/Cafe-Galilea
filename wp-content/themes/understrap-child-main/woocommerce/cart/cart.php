@@ -62,7 +62,7 @@ do_action('woocommerce_before_cart'); ?>
 
 									<tr class="my-3 woocommerce-cart-form__cart-item text-primary <?php echo esc_attr(apply_filters('woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key)); ?>">
 
-										<td class="product-remove position-relative">
+										<td class="product-remove remove-1  d-none d-md-table-cell">
 											<?php
 											echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 												'woocommerce_cart_item_remove_link',
@@ -79,7 +79,7 @@ do_action('woocommerce_before_cart'); ?>
 											?>
 										</td>
 
-										<td class="product-thumbnail">
+										<td class="product-thumbnail my-3">
 
 											<?php
 											$thumbnail = apply_filters('woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key);
@@ -154,6 +154,23 @@ do_action('woocommerce_before_cart'); ?>
 										<td class="product-subtotal fw-bold" data-title="<?php esc_attr_e('Subtotal', 'woocommerce'); ?>">
 											<?php
 											echo apply_filters('woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal($_product, $cart_item['quantity']), $cart_item, $cart_item_key); // PHPCS: XSS ok.
+											?>
+										</td>
+
+										<td class="product-remove remove-2 d-md-none d-flex justify-content-center">
+											<?php
+											echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+												'woocommerce_cart_item_remove_link',
+												sprintf(
+													'<a href="%s" class="remove-2 fs-5" aria-label="%s" data-product_id="%s" data-product_sku="%s"><i class="fa-solid fa-trash-can"></i></a>',
+													esc_url(wc_get_cart_remove_url($cart_item_key)),
+													/* translators: %s is the product name */
+													esc_attr(sprintf(__('Remove %s from cart', 'woocommerce'), wp_strip_all_tags($product_name))),
+													esc_attr($product_id),
+													esc_attr($_product->get_sku())
+												),
+												$cart_item_key
+											);
 											?>
 										</td>
 
