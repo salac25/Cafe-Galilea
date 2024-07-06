@@ -21,13 +21,15 @@ if (!defined('ABSPATH')) {
 }
 
 if ($related_products) : ?>
-	<section class="related products col-12">
+
+	<section class="related-products mt-5">
 
 		<?php
 		$heading = apply_filters('woocommerce_product_related_products_heading', __('Related products', 'woocommerce'));
 
 		if ($heading) :
 		?>
+
 			<h2><?php echo esc_html($heading); ?></h2>
 		<?php endif; ?>
 
@@ -42,7 +44,6 @@ if ($related_products) : ?>
 
 			wc_get_template_part('content', 'product');
 			?>
-
 		<?php endforeach; ?>
 
 		<?php woocommerce_product_loop_end(); ?>

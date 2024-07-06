@@ -151,3 +151,7 @@ add_filter('woocommerce_cart_item_removed_notice_type', '__return_null');
 
 /* Remove default styles from woocommerce */
 // add_filter('woocommerce_enqueue_styles', '__return_empty_array');
+
+
+//Remove Category image from shop page
+remove_action('woocommerce_before_subcategory_title', 'woocommerce_subcategory_thumbnail', 10);

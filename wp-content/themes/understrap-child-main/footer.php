@@ -31,7 +31,7 @@ $container = get_theme_mod('understrap_container_type');
 
 						<footer class="bg-primary text-secondary pt-5">
 							<div class="container text-md-left">
-								<div class="row text-md-left">
+								<div class="row d-flex flex-row text-md-left">
 
 									<div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
 										<h1 class="mb-4 font-weight-bold text-secondary">Cafe Galilea</h1>
